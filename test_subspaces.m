@@ -37,7 +37,7 @@ tested_subspace_matrix = A * B;
 i1 = l_part_A(i);
 i2 = l_part_A(i+1) - 1;
 % do test
-colspace_equality(left_A(:, i1:i2), tested_subspace_matrix, tol)
+test_colspace_equality(left_A(:, i1:i2), tested_subspace_matrix, tol)
 
 %%% A: first block, right basis %%%
 i = 1; % index of tested block
@@ -46,7 +46,7 @@ tested_subspace_matrix = pinv(A) * A * B;
 i1 = r_part_A(i);
 i2 = r_part_A(i+1) - 1;
 % do test
-colspace_equality(right_A(:, i1:i2), tested_subspace_matrix, tol)
+test_colspace_equality(right_A(:, i1:i2), tested_subspace_matrix, tol)
 
 %%% A: first two blocks, left basis %%%
 i = 1; % index of tested block
@@ -55,7 +55,7 @@ tested_subspace_matrix = A;
 i1 = l_part_A(i);
 i2 = l_part_A(i+2) - 1;
 % do test
-colspace_equality(left_A(:, i1:i2), tested_subspace_matrix, tol)
+test_colspace_equality(left_A(:, i1:i2), tested_subspace_matrix, tol)
 
 %%% A: first two blocks, right basis %%%
 i = 1; % index of tested block
@@ -64,5 +64,5 @@ tested_subspace_matrix = A';
 i1 = r_part_A(i);
 i2 = r_part_A(i+2) - 1;
 % do test
-colspace_equality(right_A(:, i1:i2), tested_subspace_matrix, tol)
+test_colspace_equality(right_A(:, i1:i2), tested_subspace_matrix, tol)
 

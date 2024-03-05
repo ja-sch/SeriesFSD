@@ -1,4 +1,4 @@
-function [test_result] = colspace_inclusion(A,B, tol)
+function [test_result] = test_colspace_inclusion(A,B, tol)
 % Tests if colspace of A is contained in colspace of B, using user-defined
 % tolerance parameter for numerical errors
 

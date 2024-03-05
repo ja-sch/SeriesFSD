@@ -12,6 +12,14 @@
 
 %-----------------------------------%
 
+%%%% Setup %%%%
+
+% Clear environment
+clearvars
+
+% Global settings
+tol_numrank = 1e-8; % tolerance for computing numerical rank (should be chosen to be smaller than singular values of the to-be obtained blocks, but larger than the `artificially nonzero' singular values that mathematically are actually zero)
+
 %%%% Create input matrices %%%%
 % Create input (``raw'')
 n = 32; % choose size (must be power of 2 for function my_extended_input6 function to work!)
