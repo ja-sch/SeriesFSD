@@ -8,15 +8,15 @@ It contains:
 
 Main files for the above functionalities:
 1. (algorithm)
-    - main.m -- the main file
-    - display_decomposition.m -- displaying the decomposition
-    - seriesFSD.m -- the core function, constructs Series-FSD
+    - main.m -- the main file,
+    - display_decomposition.m -- displaying the decomposition,
+    - seriesFSD.m -- the core function, constructs Series-FSD.
 2. (runtime comparison)
-    - ThueM_runtime_comparison_main.m -- compares runtimes
-    - ThueM_equality_validation_main.m -- validates that compared functions output the same results
+    - ThueM_runtime_comparison_main.m -- compares runtimes,
+    - ThueM_equality_validation_main.m -- validates that compared functions output the same results.
 
-`Bonus' files: *live scripts* for the above functionalities
-1. main.mlx
-1. ThueM_runtime_comparison_main.mlx
+`Bonus' files: *live scripts* for the above functionalities:
+1. main.mlx,
+1. ThueM_runtime_comparison_main.mlx.
 
 Enjoy!
